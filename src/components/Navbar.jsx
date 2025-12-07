@@ -24,7 +24,6 @@ function Navbar() {
     { id: 'skills', label: 'Yetenekler' },
     { id: 'projects', label: 'Projeler' },
     { id: 'experience', label: 'Deneyim' },
-    { id: 'contact', label: 'İletişim' },
   ]
 
   return (
@@ -60,7 +59,7 @@ function Navbar() {
           </div>
           <div className="md:hidden">
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection('hero')}
               className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium"
             >
               Menü

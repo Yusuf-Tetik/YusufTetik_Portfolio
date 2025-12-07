@@ -1,32 +1,22 @@
 export const skills = [
   {
-    category: 'Frontend',
-    items: [
-      { name: 'React', level: 'İleri' },
-      { name: 'JavaScript', level: 'İleri' },
-      { name: 'HTML5', level: 'İleri' },
-      { name: 'CSS3', level: 'İleri' },
-      { name: 'TailwindCSS', level: 'İleri' },
-      { name: 'Vite', level: 'Orta' },
-    ],
+    category: 'Languages',
+    items: ['C#', 'JavaScript', 'TypeScript', 'Python', 'HTML', 'CSS'],
   },
   {
-    category: 'Backend',
-    items: [
-      { name: 'Node.js', level: 'Orta' },
-      { name: 'Express', level: 'Orta' },
-      { name: 'MongoDB', level: 'Temel' },
-      { name: 'RESTful API', level: 'Orta' },
-    ],
+    category: 'Frameworks & Tools',
+    items: ['.NET', 'React', 'Next.js', 'Node.js', 'Express.js', 'TailwindCSS', 'Git', 'GitHub', 'Docker', 'Vercel', 'Vite'],
   },
   {
-    category: 'Araçlar',
-    items: [
-      { name: 'Git', level: 'Orta' },
-      { name: 'GitHub', level: 'Orta' },
-      { name: 'VS Code', level: 'İleri' },
-      { name: 'Figma', level: 'Temel' },
-    ],
+    category: 'Databases',
+    items: ['MySQL', 'MongoDB', 'Supabase','PostgreSQL'],
+  },
+  {
+    category: 'Data Science & AI',
+    items: ['NumPy', 'Pandas', 'Matplotlib', 'Scikit-learn', 'TensorFlow', 'PyTorch'],
+  },
+  {
+    category: 'Languages',
+    items: ['Turkish (Native)', 'English (Upper-Intermediate)'],
   },
 ]
-

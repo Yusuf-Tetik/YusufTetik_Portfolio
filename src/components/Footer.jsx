@@ -8,7 +8,7 @@ function Footer() {
           © {currentYear} Yusuf Tetik. Tüm hakları saklıdır.
         </p>
         <p className="text-sm text-gray-500">
-          Made with React & TailwindCSS
+         Made by Yusuf Tetik
         </p>
       </div>
     </footer>
