@@ -1,6 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import { projects } from '../data/projects'
 
 function Projects() {
+  const navigate = useNavigate()
+
   return (
     <section
       id="projects"
@@ -34,7 +37,7 @@ function Projects() {
               </div>
               <div className="flex gap-4">
                 <button
-                  onClick={() => console.log(`Detay: ${project.projectTitle}`)}
+                  onClick={() => navigate(`/projects/${project.slug}`)}
                   className="px-4 py-2 bg-primary-600 dark:bg-primary-500 text-white rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors"
                 >
                   Detay

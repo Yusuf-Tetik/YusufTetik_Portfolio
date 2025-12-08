@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -7,6 +8,10 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Footer from './components/Footer'
 import ThemeToggle from './components/ThemeToggle'
+import GymBuddy from './projects/GymBuddy'
+import MindSense from './projects/MindSense'
+import YakinDaNelerVar from './projects/YakinDaNelerVar'
+import Yobex from './projects/Yobex'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -34,16 +39,28 @@ function App() {
     }
   }
 
+  const HomePage = () => (
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Experience />
+    </>
+  )
+
   return (
     <div className="min-h-screen">
       <ThemeToggle darkMode={darkMode} toggleTheme={toggleTheme} />
       <Navbar />
       <main>
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/projects/gymbuddy" element={<GymBuddy />} />
+          <Route path="/projects/mindsense" element={<MindSense />} />
+          <Route path="/projects/yakindanelervar" element={<YakinDaNelerVar />} />
+          <Route path="/projects/yobex" element={<Yobex />} />
+        </Routes>
       </main>
       <Footer />
     </div>

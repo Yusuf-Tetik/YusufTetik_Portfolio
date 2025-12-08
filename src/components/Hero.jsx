@@ -38,7 +38,7 @@ function Hero() {
           </button>
         </div>
         <p className="text-gray-700 dark:text-gray-300 mb-4">
-          Bana buradan ulaşabilirsiniz:
+          Bana bu kanallardan ulaşabilirsiniz;
         </p>
         <div className="flex justify-center gap-6">
           <a

@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +18,15 @@ function Navbar() {
     const element = document.getElementById(sectionId)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  const handleNav = (sectionId) => {
+    if (location.pathname !== '/') {
+      navigate('/')
+      setTimeout(() => scrollToSection(sectionId), 120)
+    } else {
+      scrollToSection(sectionId)
     }
   }
 
@@ -49,7 +61,7 @@ function Navbar() {
               {navLinks.map((link) => (
                 <button
                   key={link.id}
-                  onClick={() => scrollToSection(link.id)}
+                  onClick={() => handleNav(link.id)}
                   className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium transition-colors"
                 >
                   {link.label}
@@ -59,7 +71,7 @@ function Navbar() {
           </div>
           <div className="md:hidden">
             <button
-              onClick={() => scrollToSection('hero')}
+              onClick={() => handleNav('hero')}
               className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium"
             >
               Menü

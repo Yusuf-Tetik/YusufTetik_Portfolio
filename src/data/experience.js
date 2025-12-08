@@ -9,8 +9,8 @@ export const experience = [
   },
   {
     id: 2,
-    companyName: 'Artificial Intelligence and Technology Academy',
-    role: 'Yapay Zekâ Eğitimi Katılımcısı',
+    companyName: 'Google Yapay Zeka Akademisi',
+    role: 'Stajyer',
     dateRange: 'Kasım 2024 – Ağustos 2025',
     shortDescription:
       'Python, FastAPI ve veri bilimi araçları üzerine eğitim aldım. Dört kişilik bir ekiple AI destekli eğitim platformu MindSense’i geliştirdim ve projenin tüm frontend kısmından sorumluydum.',
