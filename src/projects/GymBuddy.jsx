@@ -55,8 +55,10 @@ function GymBuddy() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Favori egzersizleri kaydetme ve hızlıca geri dönme akışı, basit bir oturum açma/kayıt ol deneyimiyle
-              desteklenmiştir. Hafif tema/dark tema uyumu ve responsive tasarım tüm cihazlarda sorunsuz çalışır.
+            Uygulamanın ana sayfası, kullanıcıyı egzersiz keşfetmeye yönlendiren sade ve motive edici bir arayüz sunar.
+             Kas grubu seçimi sonrası kullanıcı, seçtiği bölgeye uygun egzersizlerin görselleri, hedef kas etiketleri ve 
+             isimleriyle düzenli bir grid şeklinde listelendiği sonuç ekranına yönlendirilir. Bu yapı, aranan egzersizlere 
+             hızlı ve anlaşılır şekilde ulaşmayı sağlar.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img

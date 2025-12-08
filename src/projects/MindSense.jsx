@@ -58,10 +58,11 @@ function MindSense() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Giriş/kayıt akışı sade tutulurken, öğretmen panelinde sınıf bazlı içerik paylaşımı, bildirimler ve öğrenci
-              ilerleme takibi bulunur. Tasarım; açık/koyu tema desteği ve mobil uyumla güçlendirilmiştir.
+            Giriş ve kayıt akışı, kullanıcıların hızlı ve sorunsuz şekilde hesap oluşturup oturum açabilmesi için sade bir
+            yapıda tasarlanmıştır. Mobil uyumlu arayüz ve optimize edilmiş form yapısı sayesinde tüm cihazlarda akıcı ve
+            erişilebilir bir deneyim sunar.
             </p>
-            <div className="grid md:grid-cols-3 gap-4">
+            <div className="grid md:grid-cols-2 gap-4">
               <img
                 src={images.login}
                 alt="MindSense giriş ekranı"
@@ -72,12 +73,20 @@ function MindSense() {
                 alt="MindSense kayıt ol ekranı"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
-              <img
-                src={images.teacher}
-                alt="MindSense öğretmen paneli"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
             </div>
+          </section>
+
+          <section className="space-y-4">
+            <p className="text-gray-700 dark:text-gray-300">
+            Öğretmen paneli, öğrencilerin mental durumlarını analiz ederek hangi öğrencinin desteğe ihtiyaç duyabileceğini 
+            anlamayı sağlar. Öğretmenlerin öğrencileriyle daha doğru zamanda ve daha etkili şekilde iletişime geçmesine 
+            yardımcı olur.
+            </p>
+            <img
+              src={images.teacher}
+              alt="MindSense öğretmen paneli ekranı"
+              className="w-full rounded-xl shadow-lg object-cover"
+            />
           </section>
         </article>
       </div>

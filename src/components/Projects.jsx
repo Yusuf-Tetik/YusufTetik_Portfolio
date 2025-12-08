@@ -35,13 +35,23 @@ function Projects() {
                   </span>
                 ))}
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 <button
                   onClick={() => navigate(`/projects/${project.slug}`)}
                   className="px-4 py-2 bg-primary-600 dark:bg-primary-500 text-white rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors"
                 >
                   Detay
                 </button>
+                {project.siteUrl && (
+                  <a
+                    href={project.siteUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 bg-white dark:bg-gray-900 text-primary-600 dark:text-primary-400 border-2 border-primary-600 dark:border-primary-400 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors"
+                  >
+                    Siteye Git
+                  </a>
+                )}
                 <a
                   href={project.githubUrl}
                   target="_blank"

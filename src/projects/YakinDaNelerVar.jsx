@@ -63,8 +63,8 @@ function YakinDaNelerVar() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Son kullanıcı tarafında kartlar ve takvim görünümüyle yaklaşan etkinlikler kolayca takip edilir. Filtreleme,
-              favori listesi ve hatırlatıcı ayarlarıyla deneyim desteklenir.
+              Son kullanıcı tarafında kartlar ve takvim görünümüyle yaklaşan etkinlikler kolayca takip edilir. Katılmak istediğiniz etkinlikleri seçip etkinlik detayına ulaşabilirsiniz.
+              eğitimler için katıl butonuna tıklayarak başarılı bir şekilde katılım kaydı oluşturabilirler.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img

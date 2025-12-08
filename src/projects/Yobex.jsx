@@ -63,8 +63,8 @@ function Yobex() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Üye ol/giriş yap akışı, sipariş geçmişi ve adres yönetimi gibi temel e-ticaret fonksiyonlarını destekler.
-              Misafir alışverişi için basit bir checkout deneyimi de kurgulanmıştır.
+            Uygulama, kullanıcıların kolayca hesap oluşturup giriş yapabileceği basit bir kimlik doğrulama akışı sunar. 
+            Kayıt olan kullanıcılar, kişisel hesapları üzerinden alışveriş sürecini daha rahat takip edebilir.
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img
