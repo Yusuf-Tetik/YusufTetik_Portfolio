@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa'
+import cvFile from '../YusufTetik_Cv (3).pdf'
 
 function Hero() {
   const scrollToSection = (sectionId) => {
@@ -25,7 +26,7 @@ function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
           <button
-            onClick={() => window.open('/cv.pdf', '_blank')}
+            onClick={() => window.open(cvFile, '_blank')}
             className="px-8 py-3 bg-primary-600 text-white rounded-lg font-semibold hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 transition-colors shadow-lg hover:shadow-xl"
           >
             CV'yi İndir

@@ -3,6 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom'
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
   const location = useLocation()
 
@@ -22,6 +23,7 @@ function Navbar() {
   }
 
   const handleNav = (sectionId) => {
+    setIsMenuOpen(false)
     if (location.pathname !== '/') {
       navigate('/')
       setTimeout(() => scrollToSection(sectionId), 120)
@@ -71,13 +73,28 @@ function Navbar() {
           </div>
           <div className="md:hidden">
             <button
-              onClick={() => handleNav('hero')}
+              onClick={() => setIsMenuOpen((prev) => !prev)}
               className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium"
             >
               Menü
             </button>
           </div>
         </div>
+        {isMenuOpen && (
+          <div className="md:hidden pb-4">
+            <div className="flex flex-col space-y-2 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-lg p-4 shadow-lg border border-gray-200 dark:border-gray-800">
+              {navLinks.map((link) => (
+                <button
+                  key={link.id}
+                  onClick={() => handleNav(link.id)}
+                  className="text-left text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-2 py-2 text-sm font-medium rounded-md hover:bg-primary-50 dark:hover:bg-gray-800"
+                >
+                  {link.label}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   )

@@ -5,7 +5,7 @@ export const experience = [
     role: 'Frontend Stajyeri',
     dateRange: 'Ağustos 2025 – Eylül 2025',
     shortDescription:
-      'Görev yönetimi ve etkinlik platformları için React ve Next.js ile arayüz geliştirdim. Supabase ile tam stack bir demo oluşturdum ve 100+ kişilik bir ekibe sundum. Projenin hızlı tamamlanması için yapay zekâ destekli yöntemler kullandım.',
+      'Turkcell Life Portal (demo) görev yönetimi ve etkinlik platformları için React ve Next.js ile arayüz geliştirdim. Supabase ile tam stack bir demo oluşturdum ve 100+ kişilik bir ekibe sundum. Ayrıca backend stajyerleri tarafından geliştirilen To-Do/Jira tarzı görev yönetim uygulamasının tüm frontend mimarisini oluşturdum. Arayüz tasarımını, bileşen yapısını ve API entegrasyonlarını optimize ederek kullanıcı deneyimini geliştirdim.',
   },
   {
     id: 2,
