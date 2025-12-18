@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 import { projects } from '../data/projects'
 
 function Projects() {
+  const { t } = useTranslation()
   const navigate = useNavigate()
 
   return (
@@ -11,7 +13,7 @@ function Projects() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Projeler
+          {t('projects.title')}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {projects.map((project) => (
@@ -20,10 +22,10 @@ function Projects() {
               className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow border border-gray-200 dark:border-gray-700"
             >
               <h3 className="text-2xl font-semibold mb-3 text-primary-600 dark:text-primary-400">
-                {project.projectTitle}
+                {t(`projects.items.${project.slug}.title`)}
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-                {project.shortDescription}
+                {t(`projects.items.${project.slug}.shortDescription`)}
               </p>
               <div className="flex flex-wrap gap-2 mb-6">
                 {project.techStack.map((tech, index) => (
@@ -40,7 +42,7 @@ function Projects() {
                   onClick={() => navigate(`/projects/${project.slug}`)}
                   className="px-4 py-2 bg-primary-600 dark:bg-primary-500 text-white rounded-lg hover:bg-primary-700 dark:hover:bg-primary-600 transition-colors"
                 >
-                  Detay
+                  {t('projects.detail')}
                 </button>
                 {project.siteUrl && (
                   <a
@@ -49,7 +51,7 @@ function Projects() {
                     rel="noopener noreferrer"
                     className="px-4 py-2 bg-white dark:bg-gray-900 text-primary-600 dark:text-primary-400 border-2 border-primary-600 dark:border-primary-400 rounded-lg hover:bg-primary-50 dark:hover:bg-gray-800 transition-colors"
                   >
-                    Siteye Git
+                    {t('projects.visitSite')}
                   </a>
                 )}
                 <a
@@ -58,7 +60,7 @@ function Projects() {
                   rel="noopener noreferrer"
                   className="px-4 py-2 bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
                 >
-                  GitHub
+                  {t('projects.github')}
                 </a>
               </div>
             </div>

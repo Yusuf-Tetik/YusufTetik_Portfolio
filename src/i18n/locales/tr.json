@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımda",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "experience": "Deneyim"
+  },
+  "hero": {
+    "title": "Yusuf Tetik",
+    "subtitle": "Junior Software Engineer",
+    "description": "Modern web teknolojileri ve yapay zekâ entegrasyonlarıyla yenilikçi, ölçeklenebilir web uygulamaları geliştiriyorum.",
+    "downloadCv": "CV'yi İndir",
+    "viewExperience": "Deneyimlerim",
+    "contactText": "Bana bu kanallardan ulaşabilirsiniz;"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "paragraph1": "Merhaba, ben Yusuf Tetik. Bursa İnegöl doğumluyum. Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği bölümünden mezun oldum. Kendini sürekli geliştirmeye önem veren, analitik ve çözüm odaklı bir geliştiriciyim. Staj deneyimlerim, üniversite projelerim ve topluluk çalışmalarım sayesinde takım çalışması kültürü edindim; iş birliğine dayalı ortamlarda sorumluluk almayı ve etkili iletişim kurmayı önemsiyorum.",
+    "paragraph2": "Modern web teknolojileriyle full-stack geliştirme üzerine çalışıyorum. React, Next.js ve Node.js ekosisteminde kullanıcı odaklı, performanslı ve ölçeklenebilir web uygulamaları geliştiriyorum. Ayrıca yapay zekâ teknolojilerine olan ilgim doğrultusunda AI destekli çözümler üretmekte ve geliştirdiğim projelerde bu teknolojileri etkin şekilde kullanmaktayım."
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "categories": {
+      "Languages": "Diller",
+      "Frameworks & Tools": "Framework'ler & Araçlar",
+      "Databases": "Veritabanları",
+      "Data Science & AI": "Veri Bilimi & Yapay Zeka"
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "detail": "Detay",
+    "visitSite": "Siteye Git",
+    "github": "GitHub",
+    "backButton": "← Geri dön",
+    "items": {
+      "yakindanelervar": {
+        "title": "Yakında Neler Var?",
+        "shortDescription": "Şirket içi etkinlik ve eğitimleri tek bir platformda toplayan bir web uygulaması. Çalışanlar eğitim ve etkinlikleri liste ve takvim görünümlerinde görüntüleyebilir; admin paneli üzerinden yeni etkinlik/eğitim ekleme, güncelleme ve silme işlemleri yapılabilir. Next.js 14 ile tam stack bir mimariyle geliştirildi.",
+        "detailSubtitle": "Şirket içi etkinlik ve eğitimleri tek yerde toplayan, takvim ve kart görünümleriyle takip etmeyi kolaylaştıran full-stack bir web uygulaması.",
+        "section1": "Kayıt akışı yeni kullanıcıların hızlıca giriş yapmasını sağlarken, rol bazlı yetkilendirme admin paneline erişimi yönetir. Supabase üzerinde veritabanı ve kimlik doğrulama kullanılarak geliştirilmiştir.",
+        "section2": "Admin paneli; etkinlik ve eğitim ekleme, güncelleme, silme akışlarını içerir. Boş veri durumları için duruma özel ekranlar bulunur.",
+        "section3": "Son kullanıcı tarafında kartlar ve takvim görünümüyle yaklaşan etkinlikler kolayca takip edilir. Katılmak istediğiniz etkinlikleri seçip etkinlik detayına ulaşabilirsiniz. Eğitimler için katıl butonuna tıklayarak başarılı bir şekilde katılım kaydı oluşturabilirler."
+      },
+      "yobex": {
+        "title": "YOBEX – Full Stack E-Ticaret Platformu",
+        "shortDescription": "Kullanıcıların üye olup giriş yapabildiği, ürünleri listeleyip arayabildiği, sepete ekleyip güncelleyebildiği ve sipariş verebildiği full stack bir e-ticaret uygulaması. Hepsiburada benzeri bir yapı referans alınarak ürün filtreleme, hızlı satın alma ve misafir kullanıcı işlemleri gibi özelliklerle tasarlandı.",
+        "detailSubtitle": "Ürün listeleme, detay, sepet ve sipariş akışlarını içeren; üye/ misafir kullanıcı deneyimini destekleyen modern bir e-ticaret uygulaması.",
+        "section1": "Ana sayfa, kategori bazlı ürün listeleri, filtreleme ve arama özellikleriyle hızlı keşif deneyimi sunar. Öne çıkan kampanyalar ve banner alanları kullanıcıya özel fırsatları vurgular.",
+        "section2": "Ürün detay sayfasında görsel galerisi, stok bilgisi, varyant seçimleri ve benzer ürünler önerisi bulunur. Sepete ekleme ve favori listesine alma işlemleri tek tıkla yapılır.",
+        "section3": "Uygulama, kullanıcıların kolayca hesap oluşturup giriş yapabileceği basit bir kimlik doğrulama akışı sunar. Kayıt olan kullanıcılar, kişisel hesapları üzerinden alışveriş sürecini daha rahat takip edebilir."
+      },
+      "gymbuddy": {
+        "title": "GymBuddy – Egzersiz Rehberi Uygulaması",
+        "shortDescription": "Kullanıcıların çalıştırmak istedikleri kas gruplarına göre egzersiz arayabildiği ve egzersiz detaylarını görüntüleyebildiği bir fitness rehberi uygulaması. Modern ve sade bir arayüzle geliştirilmiştir.",
+        "detailSubtitle": "Çalıştırmak istediğiniz kas gruplarına göre egzersiz arayabileceğiniz, detayları inceleyip programınıza ekleyebileceğiniz modern bir fitness rehberi.",
+        "section1": "GymBuddy, kullanıcıların kas grubu, ekipman veya egzersiz adına göre arama yapabildiği, sonuçları filtreleyip detay sayfasında adım adım yönergeleri görebildiği hafif ve hızlı bir web uygulamasıdır.",
+        "section2": "Detay sayfasında egzersizin hedeflediği kas grubu, gerekli ekipman, adım adım uygulama yönergeleri ve görseller bulunur. Bu yapı, kullanıcıların doğru formu öğrenmesini kolaylaştırır.",
+        "section3": "Uygulamanın ana sayfası, kullanıcıyı egzersiz keşfetmeye yönlendiren sade ve motive edici bir arayüz sunar. Kas grubu seçimi sonrası kullanıcı, seçtiği bölgeye uygun egzersizlerin görselleri, hedef kas etiketleri ve isimleriyle düzenli bir grid şeklinde listelendiği sonuç ekranına yönlendirilir. Bu yapı, aranan egzersizlere hızlı ve anlaşılır şekilde ulaşmayı sağlar."
+      },
+      "mindsense": {
+        "title": "MindSense – AI-Powered Education Platform",
+        "shortDescription": "Dört kişilik bir ekiple geliştirilen yapay zekâ destekli eğitim platformu. Kullanıcılar metin, resim ve video tabanlı içerik analizleri yapabilir; etkileşimli öğrenme deneyimleri sunar. Projenin tüm frontend geliştirme sürecinden sorumluydum.",
+        "detailSubtitle": "Yapay zekâ destekli içerik analiziyle öğrenci ve eğitmenlere kişiselleştirilmiş öğrenme deneyimleri sunan, etkileşimli bir eğitim platformu.",
+        "section1": "MindSense; metin, görsel ve video içeriklerini analiz ederek özetler, kavram haritaları ve sınav soruları üretir. Öğrenciler odaklanmak istedikleri konuya göre içerik önerileri alırken, eğitmenler de sınıf yönetimi ve performans takibini merkezi bir panelden yapabilir.",
+        "section2": "İçerik analizi akışı; yüklenen materyalin türüne göre (metin/görsel/video) farklı pipeline'lar çalıştırır, özetler ve ek kaynak önerileri üretir. Kullanıcılar bu çıktıları kişiselleştirilmiş çalışma planlarına dönüştürebilir.",
+        "section3": "Giriş ve kayıt akışı, kullanıcıların hızlı ve sorunsuz şekilde hesap oluşturup oturum açabilmesi için sade bir yapıda tasarlanmıştır. Mobil uyumlu arayüz ve optimize edilmiş form yapısı sayesinde tüm cihazlarda akıcı ve erişilebilir bir deneyim sunar.",
+        "section4": "Öğretmen paneli, öğrencilerin mental durumlarını analiz ederek hangi öğrencinin desteğe ihtiyaç duyabileceğini anlamayı sağlar. Öğretmenlerin öğrencileriyle daha doğru zamanda ve daha etkili şekilde iletişime geçmesine yardımcı olur."
+      }
+    }
+  },
+  "experienceData": {
+    "items": [
+      {
+        "id": 1,
+        "companyName": "Turkcell GNÇYTNK — Web Application Solutions",
+        "role": "Frontend Stajyeri",
+        "dateRange": "Ağustos 2025 – Eylül 2025",
+        "shortDescription": "Turkcell Life Portal (demo) görev yönetimi ve etkinlik platformları için React ve Next.js ile arayüz geliştirdim. Supabase ile tam stack bir demo oluşturdum ve 100+ kişilik bir ekibe sundum. Ayrıca backend stajyerleri tarafından geliştirilen To-Do/Jira tarzı görev yönetim uygulamasının tüm frontend mimarisini oluşturdum. Arayüz tasarımını, bileşen yapısını ve API entegrasyonlarını optimize ederek kullanıcı deneyimini geliştirdim."
+      },
+      {
+        "id": 2,
+        "companyName": "Google Yapay Zeka Akademisi",
+        "role": "Stajyer",
+        "dateRange": "Kasım 2024 – Ağustos 2025",
+        "shortDescription": "Python, FastAPI ve veri bilimi araçları üzerine eğitim aldım. Dört kişilik bir ekiple AI destekli eğitim platformu MindSense'i geliştirdim ve projenin tüm frontend kısmından sorumluydum."
+      },
+      {
+        "id": 3,
+        "companyName": "QNB Finansbank — QNB 101 Programı",
+        "role": "Stajyer",
+        "dateRange": "Şubat 2025 – Mart 2025",
+        "shortDescription": "Yapay zekâ ve veri odaklı iş süreçlerine yönelik çalışmalar yaptım. Analitik düşünme, iletişim ve zaman yönetimi becerilerimi çeşitli toplantılar ve görevler aracılığıyla geliştirdim."
+      },
+      {
+        "id": 4,
+        "companyName": "Wediacorp Technology",
+        "role": "Full Stack Web Developer Stajyeri",
+        "dateRange": "Temmuz 2024 – Ağustos 2024",
+        "shortDescription": "Node.js ile RESTful API'ler geliştirdim ve React Hooks ile kullanıcı arayüzünü optimize ettim. Modern web teknolojileriyle full-stack geliştirme üzerine pratik deneyim kazandım."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Deneyim"
+  },
+  "footer": {
+    "copyright": "© {{year}} Yusuf Tetik. Tüm hakları saklıdır.",
+    "madeBy": "Made by Yusuf Tetik"
+  },
+  "menu": "Menü"
+}

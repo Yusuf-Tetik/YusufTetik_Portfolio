@@ -1,0 +1,113 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience"
+  },
+  "hero": {
+    "title": "Yusuf Tetik",
+    "subtitle": "Junior Software Engineer",
+    "description": "I develop innovative, scalable web applications with modern web technologies and AI integrations.",
+    "downloadCv": "Download CV",
+    "viewExperience": "My Experience",
+    "contactText": "You can reach me through these channels:"
+  },
+  "about": {
+    "title": "About",
+    "paragraph1": "Hello, I'm Yusuf Tetik. I was born in İnegöl, Bursa. I graduated from Süleyman Demirel University, Department of Computer Engineering. I am a developer who values continuous self-improvement, analytical thinking, and solution-oriented approach. Through my internship experiences, university projects, and community work, I have gained a culture of teamwork; I value taking responsibility and effective communication in collaborative environments.",
+    "paragraph2": "I work on full-stack development with modern web technologies. I develop user-oriented, performant, and scalable web applications in the React, Next.js, and Node.js ecosystem. Additionally, in line with my interest in artificial intelligence technologies, I produce AI-supported solutions and effectively use these technologies in the projects I develop."
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": {
+      "Languages": "Languages",
+      "Frameworks & Tools": "Frameworks & Tools",
+      "Databases": "Databases",
+      "Data Science & AI": "Data Science & AI"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "detail": "Detail",
+    "visitSite": "Visit Site",
+    "github": "GitHub",
+    "backButton": "← Go back",
+    "items": {
+      "yakindanelervar": {
+        "title": "Yakında Neler Var?",
+        "shortDescription": "A web application that brings company events and training sessions together on a single platform. Employees can view training and events in list and calendar views; new events/training can be added, updated, and deleted through the admin panel. Developed with Next.js 14 in a full-stack architecture.",
+        "detailSubtitle": "A full-stack web application that brings company events and training together, making it easy to track with calendar and card views.",
+        "section1": "The registration flow allows new users to quickly sign in, while role-based authorization manages admin panel access. Developed using Supabase for database and authentication.",
+        "section2": "The admin panel includes event and training creation, update, and deletion flows. State-specific screens are available for empty data situations.",
+        "section3": "On the end-user side, upcoming events can be easily tracked with cards and calendar views. You can select events you want to attend and access event details. For training, users can successfully register by clicking the join button."
+      },
+      "yobex": {
+        "title": "YOBEX – Full Stack E-Commerce Platform",
+        "shortDescription": "A full-stack e-commerce application where users can sign up and log in, list and search products, add to cart and update, and place orders. Designed with features like product filtering, quick purchase, and guest user functionality, inspired by Hepsiburada-like structure.",
+        "detailSubtitle": "A modern e-commerce application featuring product listing, details, cart, and order flows; supporting member/guest user experience.",
+        "section1": "The homepage offers a quick discovery experience with category-based product lists, filtering, and search features. Featured campaigns and banner areas highlight special offers for users.",
+        "section2": "The product detail page includes image gallery, stock information, variant selections, and similar product recommendations. Add to cart and add to favorites operations are done with a single click.",
+        "section3": "The application offers a simple authentication flow where users can easily create accounts and log in. Registered users can more conveniently track their shopping process through their personal accounts."
+      },
+      "gymbuddy": {
+        "title": "GymBuddy – Exercise Guide Application",
+        "shortDescription": "A fitness guide application where users can search for exercises based on the muscle groups they want to work on and view exercise details. Developed with a modern and simple interface.",
+        "detailSubtitle": "A modern fitness guide where you can search for exercises based on the muscle groups you want to work on, examine details, and add them to your program.",
+        "section1": "GymBuddy is a lightweight and fast web application where users can search by muscle group, equipment, or exercise name, filter results, and see step-by-step instructions on the detail page.",
+        "section2": "The detail page contains the targeted muscle group, required equipment, step-by-step application instructions, and visuals. This structure makes it easier for users to learn the correct form.",
+        "section3": "The application's homepage presents a simple and motivating interface that guides users to discover exercises. After muscle group selection, the user is directed to the results screen where exercises suitable for the selected area are listed in an organized grid with visuals, target muscle tags, and names. This structure allows quick and clear access to searched exercises."
+      },
+      "mindsense": {
+        "title": "MindSense – AI-Powered Education Platform",
+        "shortDescription": "An AI-powered education platform developed with a team of four. Users can perform text, image, and video-based content analysis; offers interactive learning experiences. I was responsible for the entire frontend development process of the project.",
+        "detailSubtitle": "An interactive education platform offering personalized learning experiences to students and educators with AI-powered content analysis.",
+        "section1": "MindSense analyzes text, visual, and video content to generate summaries, concept maps, and exam questions. While students receive content recommendations based on topics they want to focus on, educators can manage classes and track performance from a central panel.",
+        "section2": "The content analysis flow runs different pipelines depending on the type of uploaded material (text/visual/video), generating summaries and additional resource recommendations. Users can transform these outputs into personalized study plans.",
+        "section3": "The login and registration flow is designed with a simple structure for users to quickly and seamlessly create accounts and sign in. Thanks to mobile-friendly interface and optimized form structure, it provides a smooth and accessible experience on all devices.",
+        "section4": "The teacher panel analyzes students' mental states to understand which students may need support. It helps teachers communicate with their students at the right time and in a more effective way."
+      }
+    }
+  },
+  "experienceData": {
+    "items": [
+      {
+        "id": 1,
+        "companyName": "Turkcell GNÇYTNK — Web Application Solutions",
+        "role": "Frontend Intern",
+        "dateRange": "August 2025 – September 2025",
+        "shortDescription": "Developed UI for Turkcell Life Portal (demo) task management and event platforms using React and Next.js. Created a full-stack demo with Supabase and presented it to a team of 100+ people. Also built the entire frontend architecture of a To-Do/Jira-style task management application developed by backend interns. Improved user experience by optimizing interface design, component structure, and API integrations."
+      },
+      {
+        "id": 2,
+        "companyName": "Google AI Academy",
+        "role": "Intern",
+        "dateRange": "November 2024 – August 2025",
+        "shortDescription": "Received training on Python, FastAPI, and data science tools. Developed the AI-powered education platform MindSense with a team of four and was responsible for the entire frontend part of the project."
+      },
+      {
+        "id": 3,
+        "companyName": "QNB Finansbank — QNB 101 Program",
+        "role": "Intern",
+        "dateRange": "February 2025 – March 2025",
+        "shortDescription": "Worked on AI and data-oriented business processes. Developed analytical thinking, communication, and time management skills through various meetings and assignments."
+      },
+      {
+        "id": 4,
+        "companyName": "Wediacorp Technology",
+        "role": "Full Stack Web Developer Intern",
+        "dateRange": "July 2024 – August 2024",
+        "shortDescription": "Developed RESTful APIs with Node.js and optimized user interface with React Hooks. Gained practical experience in full-stack development with modern web technologies."
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "footer": {
+    "copyright": "© {{year}} Yusuf Tetik. All rights reserved.",
+    "madeBy": "Made by Yusuf Tetik"
+  },
+  "menu": "Menu"
+}

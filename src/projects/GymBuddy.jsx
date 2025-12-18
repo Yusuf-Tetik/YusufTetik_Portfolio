@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const images = {
   search: new URL('../img/gymbuddy/arama.png', import.meta.url).href,
@@ -9,6 +10,7 @@ const images = {
 
 function GymBuddy() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
@@ -17,58 +19,54 @@ function GymBuddy() {
           onClick={() => navigate(-1)}
           className="text-primary-600 dark:text-primary-400 hover:underline"
         >
-          ← Geri dön
+          {t('projects.backButton')}
         </button>
 
         <header className="space-y-3">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">GymBuddy – Egzersiz Rehberi</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+            {t('projects.items.gymbuddy.title')}
+          </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Çalıştırmak istediğiniz kas gruplarına göre egzersiz arayabileceğiniz, detayları inceleyip programınıza
-            ekleyebileceğiniz modern bir fitness rehberi.
+            {t('projects.items.gymbuddy.detailSubtitle')}
           </p>
         </header>
 
         <article className="space-y-8">
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              GymBuddy, kullanıcıların kas grubu, ekipman veya egzersiz adına göre arama yapabildiği, sonuçları filtreleyip
-              detay sayfasında adım adım yönergeleri görebildiği hafif ve hızlı bir web uygulamasıdır.
+              {t('projects.items.gymbuddy.section1')}
             </p>
             <img
               src={images.search}
-              alt="GymBuddy arama ekranı"
+              alt="GymBuddy search screen"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Detay sayfasında egzersizin hedeflediği kas grubu, gerekli ekipman, adım adım uygulama yönergeleri ve görseller
-              bulunur. Bu yapı, kullanıcıların doğru formu öğrenmesini kolaylaştırır.
+              {t('projects.items.gymbuddy.section2')}
             </p>
             <img
               src={images.detail}
-              alt="GymBuddy egzersiz detay ekranı"
+              alt="GymBuddy exercise detail screen"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-            Uygulamanın ana sayfası, kullanıcıyı egzersiz keşfetmeye yönlendiren sade ve motive edici bir arayüz sunar.
-             Kas grubu seçimi sonrası kullanıcı, seçtiği bölgeye uygun egzersizlerin görselleri, hedef kas etiketleri ve 
-             isimleriyle düzenli bir grid şeklinde listelendiği sonuç ekranına yönlendirilir. Bu yapı, aranan egzersizlere 
-             hızlı ve anlaşılır şekilde ulaşmayı sağlar.
+              {t('projects.items.gymbuddy.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img
                 src={images.auth}
-                alt="GymBuddy giriş ekranı"
+                alt="GymBuddy login screen"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
               <img
                 src={images.result}
-                alt="GymBuddy arama sonuç ekranı"
+                alt="GymBuddy search results screen"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
             </div>
@@ -80,4 +78,3 @@ function GymBuddy() {
 }
 
 export default GymBuddy
-

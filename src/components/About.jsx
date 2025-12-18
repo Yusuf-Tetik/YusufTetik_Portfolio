@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import profileImage from '../img/ppp.jpeg'
 
 function About() {
+  const { t } = useTranslation()
   return (
     <section
       id="about"
@@ -8,7 +10,7 @@ function About() {
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Hakkımda
+          {t('about.title')}
         </h2>
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center md:justify-start">
@@ -20,16 +22,10 @@ function About() {
           </div>
           <div className="space-y-6">
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Merhaba, ben Yusuf Tetik. Bursa İnegöl doğumluyum. Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği bölümünden
-              mezun oldum. Kendini sürekli geliştirmeye önem veren, analitik ve çözüm odaklı bir geliştiriciyim. Staj deneyimlerim,
-              üniversite projelerim ve topluluk çalışmalarım sayesinde takım çalışması kültürü edindim; iş birliğine dayalı ortamlarda
-              sorumluluk almayı ve etkili iletişim kurmayı önemsiyorum.
+              {t('about.paragraph1')}
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-              Modern web teknolojileriyle full-stack geliştirme üzerine çalışıyorum. React, Next.js ve Node.js ekosisteminde
-              kullanıcı odaklı, performanslı ve ölçeklenebilir web uygulamaları geliştiriyorum. Ayrıca yapay zekâ teknolojilerine 
-              olan ilgim doğrultusunda AI destekli çözümler üretmekte ve geliştirdiğim projelerde bu teknolojileri
-              etkin şekilde kullanmaktayım.
+              {t('about.paragraph2')}
             </p>
           </div>
         </div>

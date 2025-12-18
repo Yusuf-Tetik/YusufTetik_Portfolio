@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const images = {
   home: new URL('../img/mindsense/anasayfaa.jpeg', import.meta.url).href,
@@ -10,6 +11,7 @@ const images = {
 
 function MindSense() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
@@ -18,59 +20,54 @@ function MindSense() {
           onClick={() => navigate(-1)}
           className="text-primary-600 dark:text-primary-400 hover:underline"
         >
-          ← Geri dön
+          {t('projects.backButton')}
         </button>
 
         <header className="space-y-3">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">MindSense – AI-Powered Education</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+            {t('projects.items.mindsense.title')}
+          </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Yapay zekâ destekli içerik analiziyle öğrenci ve eğitmenlere kişiselleştirilmiş öğrenme deneyimleri sunan,
-            etkileşimli bir eğitim platformu.
+            {t('projects.items.mindsense.detailSubtitle')}
           </p>
         </header>
 
         <article className="space-y-8">
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              MindSense; metin, görsel ve video içeriklerini analiz ederek özetler, kavram haritaları ve sınav soruları
-              üretir. Öğrenciler odaklanmak istedikleri konuya göre içerik önerileri alırken, eğitmenler de sınıf
-              yönetimi ve performans takibini merkezi bir panelden yapabilir.
+              {t('projects.items.mindsense.section1')}
             </p>
             <img
               src={images.home}
-              alt="MindSense ana sayfa"
+              alt="MindSense homepage"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              İçerik analizi akışı; yüklenen materyalin türüne göre (metin/görsel/video) farklı pipeline’lar çalıştırır,
-              özetler ve ek kaynak önerileri üretir. Kullanıcılar bu çıktıları kişiselleştirilmiş çalışma planlarına
-              dönüştürebilir.
+              {t('projects.items.mindsense.section2')}
             </p>
             <img
               src={images.training}
-              alt="MindSense eğitim içeriği"
+              alt="MindSense training content"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-            Giriş ve kayıt akışı, kullanıcıların hızlı ve sorunsuz şekilde hesap oluşturup oturum açabilmesi için sade bir
-            yapıda tasarlanmıştır. Mobil uyumlu arayüz ve optimize edilmiş form yapısı sayesinde tüm cihazlarda akıcı ve
-            erişilebilir bir deneyim sunar.
+              {t('projects.items.mindsense.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img
                 src={images.login}
-                alt="MindSense giriş ekranı"
+                alt="MindSense login screen"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
               <img
                 src={images.signup}
-                alt="MindSense kayıt ol ekranı"
+                alt="MindSense signup screen"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
             </div>
@@ -78,13 +75,11 @@ function MindSense() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-            Öğretmen paneli, öğrencilerin mental durumlarını analiz ederek hangi öğrencinin desteğe ihtiyaç duyabileceğini 
-            anlamayı sağlar. Öğretmenlerin öğrencileriyle daha doğru zamanda ve daha etkili şekilde iletişime geçmesine 
-            yardımcı olur.
+              {t('projects.items.mindsense.section4')}
             </p>
             <img
               src={images.teacher}
-              alt="MindSense öğretmen paneli ekranı"
+              alt="MindSense teacher panel screen"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
@@ -95,4 +90,3 @@ function MindSense() {
 }
 
 export default MindSense
-

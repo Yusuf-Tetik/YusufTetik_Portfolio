@@ -14,16 +14,17 @@ import YakinDaNelerVar from './projects/YakinDaNelerVar'
 import Yobex from './projects/Yobex'
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(true)
 
   useEffect(() => {
-
     const savedTheme = localStorage.getItem('theme')
-    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    // Varsayılan dark mode, kullanıcı light seçtiyse light mode
+    if (savedTheme === 'light') {
+      setDarkMode(false)
+      document.documentElement.classList.remove('dark')
+    } else {
       setDarkMode(true)
       document.documentElement.classList.add('dark')
-    } else {
-      document.documentElement.classList.remove('dark')
     }
   }, [])
 

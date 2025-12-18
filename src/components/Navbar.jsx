@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
+import LanguageToggle from './LanguageToggle'
 
 function Navbar() {
+  const { t } = useTranslation()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const navigate = useNavigate()
@@ -33,11 +36,11 @@ function Navbar() {
   }
 
   const navLinks = [
-    { id: 'hero', label: 'Ana Sayfa' },
-    { id: 'about', label: 'Hakkımda' },
-    { id: 'skills', label: 'Yetenekler' },
-    { id: 'projects', label: 'Projeler' },
-    { id: 'experience', label: 'Deneyim' },
+    { id: 'hero', label: t('nav.home') },
+    { id: 'about', label: t('nav.about') },
+    { id: 'skills', label: t('nav.skills') },
+    { id: 'projects', label: t('nav.projects') },
+    { id: 'experience', label: t('nav.experience') },
   ]
 
   return (
@@ -58,25 +61,25 @@ function Navbar() {
               Yusuf Tetik
             </button>
           </div>
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              {navLinks.map((link) => (
-                <button
-                  key={link.id}
-                  onClick={() => handleNav(link.id)}
-                  className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium transition-colors"
-                >
-                  {link.label}
-                </button>
-              ))}
-            </div>
+          <div className="hidden md:flex items-center space-x-4">
+            {navLinks.map((link) => (
+              <button
+                key={link.id}
+                onClick={() => handleNav(link.id)}
+                className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium transition-colors"
+              >
+                {link.label}
+              </button>
+            ))}
+            <LanguageToggle />
           </div>
-          <div className="md:hidden">
+          <div className="flex items-center gap-3 md:hidden">
+            <LanguageToggle />
             <button
               onClick={() => setIsMenuOpen((prev) => !prev)}
               className="text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 px-3 py-2 text-sm font-medium"
             >
-              Menü
+              {t('menu')}
             </button>
           </div>
         </div>

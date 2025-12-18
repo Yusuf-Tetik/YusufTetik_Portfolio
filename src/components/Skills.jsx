@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next'
 import { skills } from '../data/skills'
 
 function Skills() {
+  const { t } = useTranslation()
   return (
     <section
       id="skills"
@@ -8,7 +10,7 @@ function Skills() {
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Yetenekler
+          {t('skills.title')}
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {skills.map((category, categoryIndex) => (
@@ -17,7 +19,7 @@ function Skills() {
               className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold mb-3 text-primary-600 dark:text-primary-400">
-                {category.category}
+                {t(`skills.categories.${category.category}`, category.category)}
               </h3>
               <div className="flex flex-wrap gap-x-2 gap-y-1">
                 {category.items.map((item, itemIndex) => (

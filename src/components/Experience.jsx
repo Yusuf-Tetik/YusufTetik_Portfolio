@@ -1,6 +1,9 @@
-import { experience } from '../data/experience'
+import { useTranslation } from 'react-i18next'
 
 function Experience() {
+  const { t } = useTranslation()
+  const experienceItems = t('experienceData.items', { returnObjects: true })
+
   return (
     <section
       id="experience"
@@ -8,15 +11,15 @@ function Experience() {
     >
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-900 dark:text-white">
-          Deneyim
+          {t('experience.title')}
         </h2>
         <div className="space-y-8">
-          {experience.map((exp, index) => (
+          {experienceItems.map((exp, index) => (
             <div
               key={exp.id}
               className="relative pl-8 pb-8 border-l-2 border-primary-400 dark:border-primary-600"
             >
-              {index !== experience.length - 1 && (
+              {index !== experienceItems.length - 1 && (
                 <div className="absolute left-[-6px] top-0 w-3 h-3 bg-primary-600 dark:bg-primary-400 rounded-full" />
               )}
               <div className="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">

@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useTranslation } from 'react-i18next'
 
 const images = {
   register: new URL('../img/yakındanelervar/01-register.png', import.meta.url).href,
@@ -10,6 +11,7 @@ const images = {
 
 function YakinDaNelerVar() {
   const navigate = useNavigate()
+  const { t } = useTranslation()
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900">
@@ -18,39 +20,38 @@ function YakinDaNelerVar() {
           onClick={() => navigate(-1)}
           className="text-primary-600 dark:text-primary-400 hover:underline"
         >
-          ← Geri dön
+          {t('projects.backButton')}
         </button>
 
         <header className="space-y-3">
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">Yakında Neler Var?</h1>
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+            {t('projects.items.yakindanelervar.title')}
+          </h1>
           <p className="text-lg text-gray-700 dark:text-gray-300">
-            Şirket içi etkinlik ve eğitimleri tek yerde toplayan, takvim ve kart görünümleriyle takip etmeyi kolaylaştıran
-            full-stack bir web uygulaması.
+            {t('projects.items.yakindanelervar.detailSubtitle')}
           </p>
         </header>
 
         <article className="space-y-8">
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Kayıt akışı yeni kullanıcıların hızlıca giriş yapmasını sağlarken, rol bazlı yetkilendirme admin paneline
-              erişimi yönetir. Supabase üzerinde veritabanı ve kimlik doğrulama kullanılarak geliştirilmiştir.
+              {t('projects.items.yakindanelervar.section1')}
             </p>
             <img
               src={images.register}
-              alt="Yakında Neler Var kayıt ekranı"
+              alt="Registration screen"
               className="w-full rounded-xl shadow-lg object-cover"
             />
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Admin paneli; etkinlik ve eğitim ekleme, güncelleme, silme akışlarını içerir. Boş veri durumları için
-              duruma özel ekranlar bulunur.
+              {t('projects.items.yakindanelervar.section2')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img
                 src={images.adminEmpty}
-                alt="Admin paneli boş liste"
+                alt="Admin panel empty list"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
               <img
@@ -63,18 +64,17 @@ function YakinDaNelerVar() {
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
-              Son kullanıcı tarafında kartlar ve takvim görünümüyle yaklaşan etkinlikler kolayca takip edilir. Katılmak istediğiniz etkinlikleri seçip etkinlik detayına ulaşabilirsiniz.
-              eğitimler için katıl butonuna tıklayarak başarılı bir şekilde katılım kaydı oluşturabilirler.
+              {t('projects.items.yakindanelervar.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               <img
                 src={images.home}
-                alt="Kullanıcı ana sayfa ve kartlar"
+                alt="User homepage and cards"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
               <img
                 src={images.calendar}
-                alt="Takvim görünümü"
+                alt="Calendar view"
                 className="w-full rounded-xl shadow-lg object-cover"
               />
             </div>
@@ -86,4 +86,3 @@ function YakinDaNelerVar() {
 }
 
 export default YakinDaNelerVar
-
