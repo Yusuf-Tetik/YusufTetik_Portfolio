@@ -12,6 +12,7 @@ import GymBuddy from './projects/GymBuddy'
 import MindSense from './projects/MindSense'
 import YakinDaNelerVar from './projects/YakinDaNelerVar'
 import Yobex from './projects/Yobex'
+import NestJsECommerceBackend from './projects/NestJsECommerceBackend'
 
 function App() {
   const [darkMode, setDarkMode] = useState(true)
@@ -61,6 +62,7 @@ function App() {
           <Route path="/projects/mindsense" element={<MindSense />} />
           <Route path="/projects/yakindanelervar" element={<YakinDaNelerVar />} />
           <Route path="/projects/yobex" element={<Yobex />} />
+          <Route path="/projects/nestjs-ecommerce-backend" element={<NestJsECommerceBackend />} />
         </Routes>
       </main>
       <Footer />

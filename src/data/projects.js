@@ -35,5 +35,13 @@ export const projects = [
     techStack: ['React', 'FastAPI', 'Python', 'Docker', 'TensorFlow', 'PyTorch', 'PostgreSQL'],
     githubUrl: 'https://github.com/Yusuf-Tetik/YapayZekaAkademi',
   },
+  {
+    id: 5,
+    projectTitle: 'NestJS E-Commerce Backend API',
+    slug: 'nestjs-ecommerce-backend',
+    shortDescription: 'Modern e-ticaret ihtiyaçları için geliştirilmiş, yüksek performanslı ve ölçeklenebilir bir RESTful API çözümü. NestJS mimarisi üzerine kurulu sistem; ürün yönetimi, dinamik sepet işlemleri ve güvenli sipariş akışlarını Dockerize edilmiş bir altyapı üzerinden sunar. JWT tabanlı kimlik doğrulama ve Swagger dökümantasyonu ile tam profesyonel bir backend deneyimi sağlar.',
+    techStack: ['NestJS', 'TypeScript', 'PostgreSQL', 'Docker', 'TypeORM', 'Swagger', 'JWT'],
+    githubUrl: 'https://github.com/Yusuf-Tetik/NestJs_ECommerce_Backend',
+  },
 ]
 
