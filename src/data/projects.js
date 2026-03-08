@@ -3,9 +3,9 @@ export const projects = [
     id: 5,
     projectTitle: 'VividCore AI',
     slug: 'vividcore-ai',
-    shortDescription: 'VividCore AI, yapay zeka içerik üretim stüdyosu için tasarlanmış; Next.js 14, Framer Motion ve çok dilli (i18n) altyapıyla geliştirilmiş yüksek performanslı bir kurumsal web platformudur.',
+    shortDescription: 'VividCore AI, yapay zeka içerik üreticisi bir şirket için ücretli (freelance) olarak geliştirdiğim; Next.js 14, Framer Motion ve çok dilli (i18n) altyapıyla kurgulanmış yüksek performanslı bir kurumsal web platformudur.',
     techStack: ['Next.js 14', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Resend'],
-    githubUrl: 'https://github.com/Yusuf-Tetik',
+    siteUrl: 'https://vividcoreaiofficial.com/',
     isCommercial: true,
   },
   {
