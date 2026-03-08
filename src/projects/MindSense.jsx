@@ -37,22 +37,32 @@ function MindSense() {
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.mindsense.section1')}
             </p>
-            <img
-              src={images.home}
-              alt="MindSense homepage"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.home}
+                alt={t('projects.items.mindsense.imageHome')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.mindsense.imageHome')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.mindsense.section2')}
             </p>
-            <img
-              src={images.training}
-              alt="MindSense training content"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.training}
+                alt={t('projects.items.mindsense.imageTraining')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.mindsense.imageTraining')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
@@ -60,16 +70,26 @@ function MindSense() {
               {t('projects.items.mindsense.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.login}
-                alt="MindSense login screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.signup}
-                alt="MindSense signup screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.login}
+                  alt={t('projects.items.mindsense.imageLogin')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.mindsense.imageLogin')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.signup}
+                  alt={t('projects.items.mindsense.imageSignup')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.mindsense.imageSignup')}
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -77,11 +97,16 @@ function MindSense() {
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.mindsense.section4')}
             </p>
-            <img
-              src={images.teacher}
-              alt="MindSense teacher panel screen"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.teacher}
+                alt={t('projects.items.mindsense.imageTeacher')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.mindsense.imageTeacher')}
+              </figcaption>
+            </figure>
           </section>
         </article>
       </div>

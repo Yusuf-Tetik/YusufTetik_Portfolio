@@ -30,6 +30,9 @@
   },
   "projects": {
     "title": "Projeler",
+    "commercialSection": "Ticari Projeler",
+    "commercialProjectLabel": "Ticari Proje",
+    "otherSection": "Diğer Projeler",
     "detail": "Detay",
     "visitSite": "Siteye Git",
     "github": "GitHub",
@@ -39,34 +42,79 @@
         "title": "Yakında Neler Var?",
         "shortDescription": "Şirket içi etkinlik ve eğitimleri tek bir platformda toplayan bir web uygulaması. Çalışanlar eğitim ve etkinlikleri liste ve takvim görünümlerinde görüntüleyebilir; admin paneli üzerinden yeni etkinlik/eğitim ekleme, güncelleme ve silme işlemleri yapılabilir. Next.js 14 ile tam stack bir mimariyle geliştirildi.",
         "detailSubtitle": "Şirket içi etkinlik ve eğitimleri tek yerde toplayan, takvim ve kart görünümleriyle takip etmeyi kolaylaştıran full-stack bir web uygulaması.",
-        "section1": "Kayıt akışı yeni kullanıcıların hızlıca giriş yapmasını sağlarken, rol bazlı yetkilendirme admin paneline erişimi yönetir. Supabase üzerinde veritabanı ve kimlik doğrulama kullanılarak geliştirilmiştir.",
-        "section2": "Admin paneli; etkinlik ve eğitim ekleme, güncelleme, silme akışlarını içerir. Boş veri durumları için duruma özel ekranlar bulunur.",
-        "section3": "Son kullanıcı tarafında kartlar ve takvim görünümüyle yaklaşan etkinlikler kolayca takip edilir. Katılmak istediğiniz etkinlikleri seçip etkinlik detayına ulaşabilirsiniz. Eğitimler için katıl butonuna tıklayarak başarılı bir şekilde katılım kaydı oluşturabilirler."
+        "section1": "Kayıt ekranı; yeni kullanıcıların hızlıca hesap oluşturması ve rol bazlı yetkilendirme ile admin paneline güvenli erişim yönetimi sunar.",
+        "section2": "Admin paneli; etkinlik ve eğitim ekleme, güncelleme ve silme akışlarını merkezi bir arayüzden yönetir. Boş veri durumları için özel ekranlar tasarlandı.",
+        "section3": "Kullanıcı tarafında yaklaşan etkinlikler kart ve takvim görünümüyle takip edilir; katılım kaydı tek tıkla oluşturulabilir.",
+        "imageRegister": "Kayıt sayfası: Form alanları ve rol seçimi ile kullanıcı kaydı.",
+        "imageAdminEmpty": "Admin paneli — etkinlik listesi boş durumu.",
+        "imageDashboard": "Admin paneli — etkinlik/eğitim yönetim panosu.",
+        "imageHome": "Ana sayfa: Etkinlik kartları ve hızlı erişim.",
+        "imageCalendar": "Takvim görünümü: Eğitim ve etkinlik tarihleri."
       },
       "yobex": {
         "title": "YOBEX – Full Stack E-Ticaret Platformu",
         "shortDescription": "Kullanıcıların üye olup giriş yapabildiği, ürünleri listeleyip arayabildiği, sepete ekleyip güncelleyebildiği ve sipariş verebildiği full stack bir e-ticaret uygulaması. Hepsiburada benzeri bir yapı referans alınarak ürün filtreleme, hızlı satın alma ve misafir kullanıcı işlemleri gibi özelliklerle tasarlandı.",
         "detailSubtitle": "Ürün listeleme, detay, sepet ve sipariş akışlarını içeren; üye/ misafir kullanıcı deneyimini destekleyen modern bir e-ticaret uygulaması.",
-        "section1": "Ana sayfa, kategori bazlı ürün listeleri, filtreleme ve arama özellikleriyle hızlı keşif deneyimi sunar. Öne çıkan kampanyalar ve banner alanları kullanıcıya özel fırsatları vurgular.",
-        "section2": "Ürün detay sayfasında görsel galerisi, stok bilgisi, varyant seçimleri ve benzer ürünler önerisi bulunur. Sepete ekleme ve favori listesine alma işlemleri tek tıkla yapılır.",
-        "section3": "Uygulama, kullanıcıların kolayca hesap oluşturup giriş yapabileceği basit bir kimlik doğrulama akışı sunar. Kayıt olan kullanıcılar, kişisel hesapları üzerinden alışveriş sürecini daha rahat takip edebilir."
+        "section1": "Ana sayfa; kategori bazlı ürün listeleri, arama, filtreleme ve öne çıkan kampanyalarla hızlı keşif deneyimi sunar.",
+        "section2": "Ürün detayında görsel galerisi, stok bilgisi, varyant seçimi ve benzer ürün önerileri yer alır; sepete ekleme ve favorilere alma tek tıkla yapılır.",
+        "section3": "Giriş ve kayıt akışı; kullanıcıların hesap oluşturup oturum açarak alışveriş sürecini kişisel hesaplarından takip etmesini sağlar.",
+        "imageHome": "Ana sayfa: Kategori listesi, arama ve kampanya alanları.",
+        "imageDetail": "Ürün detay sayfası: Görseller, varyantlar ve sepete ekleme.",
+        "imageDiscount": "Kampanya / indirim sayfası.",
+        "imageLogin": "Giriş ekranı.",
+        "imageSignup": "Kayıt ol ekranı."
       },
       "gymbuddy": {
         "title": "GymBuddy – Egzersiz Rehberi Uygulaması",
         "shortDescription": "Kullanıcıların çalıştırmak istedikleri kas gruplarına göre egzersiz arayabildiği ve egzersiz detaylarını görüntüleyebildiği bir fitness rehberi uygulaması. Modern ve sade bir arayüzle geliştirilmiştir.",
         "detailSubtitle": "Çalıştırmak istediğiniz kas gruplarına göre egzersiz arayabileceğiniz, detayları inceleyip programınıza ekleyebileceğiniz modern bir fitness rehberi.",
-        "section1": "GymBuddy, kullanıcıların kas grubu, ekipman veya egzersiz adına göre arama yapabildiği, sonuçları filtreleyip detay sayfasında adım adım yönergeleri görebildiği hafif ve hızlı bir web uygulamasıdır.",
-        "section2": "Detay sayfasında egzersizin hedeflediği kas grubu, gerekli ekipman, adım adım uygulama yönergeleri ve görseller bulunur. Bu yapı, kullanıcıların doğru formu öğrenmesini kolaylaştırır.",
-        "section3": "Uygulamanın ana sayfası, kullanıcıyı egzersiz keşfetmeye yönlendiren sade ve motive edici bir arayüz sunar. Kas grubu seçimi sonrası kullanıcı, seçtiği bölgeye uygun egzersizlerin görselleri, hedef kas etiketleri ve isimleriyle düzenli bir grid şeklinde listelendiği sonuç ekranına yönlendirilir. Bu yapı, aranan egzersizlere hızlı ve anlaşılır şekilde ulaşmayı sağlar."
+        "section1": "Kas grubu, ekipman veya egzersiz adına göre arama; sonuçların filtrelenmesi ve detay sayfasında adım adım yönergelere erişim.",
+        "section2": "Egzersiz detayında hedef kas grubu, ekipman bilgisi, uygulama adımları ve görseller; kullanıcıların doğru formu öğrenmesi hedeflenir.",
+        "section3": "Ana sayfa ve sonuç ekranı; kas grubu seçimi sonrası ilgili egzersizlerin grid görünümünde listelenmesi.",
+        "imageSearch": "Arama ekranı: Kas grubu ve egzersiz arama alanı.",
+        "imageDetail": "Egzersiz detay sayfası: Hedef kas, ekipman ve adım adım yönergeler.",
+        "imageAuth": "Giriş ekranı.",
+        "imageResult": "Arama sonuçları: Egzersiz kartları grid görünümü."
       },
       "mindsense": {
         "title": "MindSense – AI-Powered Education Platform",
         "shortDescription": "Dört kişilik bir ekiple geliştirilen yapay zekâ destekli eğitim platformu. Kullanıcılar metin, resim ve video tabanlı içerik analizleri yapabilir; etkileşimli öğrenme deneyimleri sunar. Projenin tüm frontend geliştirme sürecinden sorumluydum.",
         "detailSubtitle": "Yapay zekâ destekli içerik analiziyle öğrenci ve eğitmenlere kişiselleştirilmiş öğrenme deneyimleri sunan, etkileşimli bir eğitim platformu.",
-        "section1": "MindSense; metin, görsel ve video içeriklerini analiz ederek özetler, kavram haritaları ve sınav soruları üretir. Öğrenciler odaklanmak istedikleri konuya göre içerik önerileri alırken, eğitmenler de sınıf yönetimi ve performans takibini merkezi bir panelden yapabilir.",
-        "section2": "İçerik analizi akışı; yüklenen materyalin türüne göre (metin/görsel/video) farklı pipeline'lar çalıştırır, özetler ve ek kaynak önerileri üretir. Kullanıcılar bu çıktıları kişiselleştirilmiş çalışma planlarına dönüştürebilir.",
-        "section3": "Giriş ve kayıt akışı, kullanıcıların hızlı ve sorunsuz şekilde hesap oluşturup oturum açabilmesi için sade bir yapıda tasarlanmıştır. Mobil uyumlu arayüz ve optimize edilmiş form yapısı sayesinde tüm cihazlarda akıcı ve erişilebilir bir deneyim sunar.",
-        "section4": "Öğretmen paneli, öğrencilerin mental durumlarını analiz ederek hangi öğrencinin desteğe ihtiyaç duyabileceğini anlamayı sağlar. Öğretmenlerin öğrencileriyle daha doğru zamanda ve daha etkili şekilde iletişime geçmesine yardımcı olur."
+        "section1": "Ana sayfa; metin, görsel ve video içerik analizi, özetler, kavram haritaları ve sınav soruları üretimi. Öğrenci ve eğitmen için merkezi giriş noktası.",
+        "section2": "Eğitim / içerik analizi akışı; materyal türüne göre (metin/görsel/video) pipeline çalıştırma ve kişiselleştirilmiş çalışma planı oluşturma.",
+        "section3": "Giriş ve kayıt ekranları; mobil uyumlu form yapısı ile tüm cihazlarda erişilebilir kimlik doğrulama.",
+        "section4": "Öğretmen paneli: Öğrenci mental durum analizi ve desteğe ihtiyaç duyan öğrencilerin takibi.",
+        "imageHome": "Ana sayfa: İçerik analizi ve öğrenme araçlarına giriş.",
+        "imageTraining": "Eğitim ekranı: İçerik yükleme ve analiz sonuçları.",
+        "imageLogin": "Giriş ekranı.",
+        "imageSignup": "Kayıt ol ekranı.",
+        "imageTeacher": "Öğretmen paneli: Öğrenci durumu ve sınıf yönetimi."
+      },
+      "vividcore-ai": {
+        "title": "VividCore AI",
+        "shortDescription": "VividCore AI, yapay zeka içerik üreticisi bir şirket için ücretli (freelance) olarak geliştirdiğim kurumsal bir web platformudur. Hızlı yükleme, akıcı kullanıcı deneyimi ve dünya genelinde erişilebilirlik hedefiyle sunucu taraflı render ve çok dilli yapıyı tercih ettim.",
+        "detailTitle": "VividCore AI — Yapay Zeka İçerik Şirketi Web Platformu",
+        "detailIntro": "Ücretli (freelance) olarak geliştirdiğim bu projede, VividCore AI görsel içerik üretiminde yapay zekayı merkeze alan bir şirketin dijital yüzü olarak tasarlandı. Projenin temel odağı, yüksek performanslı bir kullanıcı deneyimini (UX), şık animasyonlar ve global erişilebilirlik (çok dillilik) ile birleştirmekti.",
+        "highlightsTitle": "Öne Çıkan Özellikler",
+        "highlight1": "Hız ve Performans: Next.js 14 App Router mimarisi ile sunucu taraflı render (SSR) avantajları kullanılarak ışık hızında yükleme süreleri sağlandı.",
+        "highlight2": "Dinamik Etkileşim: Framer Motion kütüphanesi ile kullanıcıyı yormayan, akıcı geçişler ve mikro etkileşimler kurgulandı.",
+        "highlight3": "Global Hazırlık: next-intl entegrasyonu sayesinde tam kapsamlı TR/EN dil desteği ve kullanıcı tercihine göre otomatik dil algılama özelliği eklendi.",
+        "highlight4": "Güvenli İletişim: Resend API ve Server Actions kullanılarak; Rate Limiting (istek sınırlama) ve XSS korumalı, spam filtreli profesyonel bir iletişim formu geliştirildi.",
+        "developmentTitle": "Geliştirme Süreci",
+        "developmentIntro": "Proje, müşteri ihtiyaçları ve kabul kriterleri üzerine kısa bir ön çalışmayla başladı; ardından tasarım ve teknik altyapı kararları uygulama aşamasına taşındı.",
+        "development1": "İhtiyaç analizi ve kapsam: Şirketin hizmetlerini, hedef kitleyi ve çok dilli / performans gereksinimlerini netleştirdim.",
+        "development2": "Mimari ve teknoloji seçimi: Next.js 14 App Router (SSR/SEO), next-intl (i18n) ve Framer Motion ile hızlı, erişilebilir ve etkileşimli bir yapı kurguladım.",
+        "development3": "Uygulama ve teslim: Bileşen bazlı geliştirme, Resend ile form entegrasyonu, rate limiting ve güvenlik kontrolleri tamamlandı; canlıya alım ve kısa revizyon döngüleriyle teslim edildi.",
+        "technicalTitle": "Yazılım ve Mimari Detaylar",
+        "technical1": "Next.js 14 App Router ile sayfalar sunucu taraflı render ediliyor; böylece ilk yükleme hızlı ve SEO dostu. Layout'lar ve route grupları ile tekrarsız, sürdürülebilir bir sayfa yapısı kullanıldı.",
+        "technical2": "next-intl ile dil dosyaları (TR/EN) merkezi yönetiliyor; locale routing ve tarayıcı diline göre varsayılan dil seçimi yapılıyor. Tüm metinler çeviri anahtarları üzerinden geliyor.",
+        "technical3": "İletişim formu Resend API'ye Server Action ile bağlandı. İstek başına rate limit, input sanitization ve XSS'e karşı koruma eklendi; kullanıcıya başarı/hata mesajları gösteriliyor.",
+        "technical4": "Framer Motion ile sayfa geçişleri ve bileşen giriş/çıkış animasyonları tanımlandı; layoutId ve variant kullanımıyla tutarlı bir hareket dili oluşturuldu. Animasyonlar reduced-motion tercihine saygı duyacak şekilde kurgulandı.",
+        "imageHome1": "Hero Section: Ana giriş ekranı; başlık, kısa açıklama ve CTA butonları (What We Create, Contact Us) ile kullanıcıyı karşılayan alan.",
+        "imageHome2": "İstatistikler ve Hakkımızda: Takipçi sayıları (Total Followers, YouTube, TikTok, Instagram) ile \"Who Is Vividcore_AI?\" tanıtım bölümü.",
+        "imageHome3": "Hizmetler (What We Create): Brand Campaigns, Social Media Content, Music & Sound-Driven Videos ve Custom Requests kartlarının yer aldığı hizmet alanı.",
+        "imageStats": "Our Stats sayfası: Total Views, Monthly Reach, Avg Engagement Rate özet kartları ve platform bazlı (YouTube, TikTok, Instagram) istatistik dökümü.",
+        "imageIletisim": "İletişim sayfası: İsim, e-posta, konu ve mesaj alanlarından oluşan form ile iletişim detayları ve sosyal medya linkleri."
       },
       "nestjs-ecommerce-backend": {
         "title": "NestJS E-Commerce Backend API",
@@ -140,7 +188,7 @@
   },
   "footer": {
     "copyright": "© {{year}} Yusuf Tetik. Tüm hakları saklıdır.",
-    "madeBy": "Made by Yusuf Tetik"
+    "madeBy": "Tasarım ve geliştirme: Yusuf Tetik"
   },
   "menu": "Menü"
 }

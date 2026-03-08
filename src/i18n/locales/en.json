@@ -30,6 +30,9 @@
   },
   "projects": {
     "title": "Projects",
+    "commercialSection": "Commercial Projects",
+    "commercialProjectLabel": "Commercial Project",
+    "otherSection": "Other Projects",
     "detail": "Detail",
     "visitSite": "Visit Site",
     "github": "GitHub",
@@ -39,34 +42,79 @@
         "title": "Yakında Neler Var?",
         "shortDescription": "A web application that brings company events and training sessions together on a single platform. Employees can view training and events in list and calendar views; new events/training can be added, updated, and deleted through the admin panel. Developed with Next.js 14 in a full-stack architecture.",
         "detailSubtitle": "A full-stack web application that brings company events and training together, making it easy to track with calendar and card views.",
-        "section1": "The registration flow allows new users to quickly sign in, while role-based authorization manages admin panel access. Developed using Supabase for database and authentication.",
-        "section2": "The admin panel includes event and training creation, update, and deletion flows. State-specific screens are available for empty data situations.",
-        "section3": "On the end-user side, upcoming events can be easily tracked with cards and calendar views. You can select events you want to attend and access event details. For training, users can successfully register by clicking the join button."
+        "section1": "Registration screen: quick account creation and role-based access control for secure admin panel entry.",
+        "section2": "Admin panel: central interface for adding, updating, and deleting events and training; dedicated screens for empty states.",
+        "section3": "User-facing card and calendar views for upcoming events; one-click registration for sessions.",
+        "imageRegister": "Registration page: form fields and role selection for user sign-up.",
+        "imageAdminEmpty": "Admin panel — empty event list state.",
+        "imageDashboard": "Admin panel — event and training management dashboard.",
+        "imageHome": "Home: event cards and quick access.",
+        "imageCalendar": "Calendar view: training and event dates."
       },
       "yobex": {
         "title": "YOBEX – Full Stack E-Commerce Platform",
         "shortDescription": "A full-stack e-commerce application where users can sign up and log in, list and search products, add to cart and update, and place orders. Designed with features like product filtering, quick purchase, and guest user functionality, inspired by Hepsiburada-like structure.",
         "detailSubtitle": "A modern e-commerce application featuring product listing, details, cart, and order flows; supporting member/guest user experience.",
-        "section1": "The homepage offers a quick discovery experience with category-based product lists, filtering, and search features. Featured campaigns and banner areas highlight special offers for users.",
-        "section2": "The product detail page includes image gallery, stock information, variant selections, and similar product recommendations. Add to cart and add to favorites operations are done with a single click.",
-        "section3": "The application offers a simple authentication flow where users can easily create accounts and log in. Registered users can more conveniently track their shopping process through their personal accounts."
+        "section1": "Homepage: category-based product lists, search, filters, and featured campaigns for quick discovery.",
+        "section2": "Product detail: image gallery, stock info, variant selection, and similar products; one-click add to cart and favorites.",
+        "section3": "Login and sign-up flow so users can create accounts and track their shopping from a personal dashboard.",
+        "imageHome": "Homepage: category list, search, and campaign areas.",
+        "imageDetail": "Product detail page: images, variants, and add to cart.",
+        "imageDiscount": "Campaign / discount page.",
+        "imageLogin": "Login screen.",
+        "imageSignup": "Sign-up screen."
       },
       "gymbuddy": {
         "title": "GymBuddy – Exercise Guide Application",
         "shortDescription": "A fitness guide application where users can search for exercises based on the muscle groups they want to work on and view exercise details. Developed with a modern and simple interface.",
         "detailSubtitle": "A modern fitness guide where you can search for exercises based on the muscle groups you want to work on, examine details, and add them to your program.",
-        "section1": "GymBuddy is a lightweight and fast web application where users can search by muscle group, equipment, or exercise name, filter results, and see step-by-step instructions on the detail page.",
-        "section2": "The detail page contains the targeted muscle group, required equipment, step-by-step application instructions, and visuals. This structure makes it easier for users to learn the correct form.",
-        "section3": "The application's homepage presents a simple and motivating interface that guides users to discover exercises. After muscle group selection, the user is directed to the results screen where exercises suitable for the selected area are listed in an organized grid with visuals, target muscle tags, and names. This structure allows quick and clear access to searched exercises."
+        "section1": "Search by muscle group, equipment, or exercise name; filter results and access step-by-step instructions on the detail page.",
+        "section2": "Exercise detail: target muscle, equipment, step-by-step instructions, and visuals to learn correct form.",
+        "section3": "Home and results screen: muscle group selection and grid view of matching exercises.",
+        "imageSearch": "Search screen: muscle group and exercise search.",
+        "imageDetail": "Exercise detail page: target muscle, equipment, and step-by-step instructions.",
+        "imageAuth": "Login screen.",
+        "imageResult": "Search results: exercise cards in grid view."
       },
       "mindsense": {
         "title": "MindSense – AI-Powered Education Platform",
         "shortDescription": "An AI-powered education platform developed with a team of four. Users can perform text, image, and video-based content analysis; offers interactive learning experiences. I was responsible for the entire frontend development process of the project.",
         "detailSubtitle": "An interactive education platform offering personalized learning experiences to students and educators with AI-powered content analysis.",
-        "section1": "MindSense analyzes text, visual, and video content to generate summaries, concept maps, and exam questions. While students receive content recommendations based on topics they want to focus on, educators can manage classes and track performance from a central panel.",
-        "section2": "The content analysis flow runs different pipelines depending on the type of uploaded material (text/visual/video), generating summaries and additional resource recommendations. Users can transform these outputs into personalized study plans.",
-        "section3": "The login and registration flow is designed with a simple structure for users to quickly and seamlessly create accounts and sign in. Thanks to mobile-friendly interface and optimized form structure, it provides a smooth and accessible experience on all devices.",
-        "section4": "The teacher panel analyzes students' mental states to understand which students may need support. It helps teachers communicate with their students at the right time and in a more effective way."
+        "section1": "Home: text, image, and video content analysis; summaries, concept maps, and exam questions. Central entry point for students and educators.",
+        "section2": "Training / content analysis flow: pipeline by material type (text/image/video) and personalized study plan creation.",
+        "section3": "Login and sign-up screens; mobile-friendly forms for accessible authentication on all devices.",
+        "section4": "Teacher panel: student mental state analysis and tracking of those who may need support.",
+        "imageHome": "Home: entry to content analysis and learning tools.",
+        "imageTraining": "Training screen: content upload and analysis results.",
+        "imageLogin": "Login screen.",
+        "imageSignup": "Sign-up screen.",
+        "imageTeacher": "Teacher panel: student status and class management."
+      },
+      "vividcore-ai": {
+        "title": "VividCore AI",
+        "shortDescription": "VividCore AI is a corporate web platform I developed on a paid (freelance) basis for an AI content production company. I chose server-side rendering and a multilingual setup to meet their need for fast load times, smooth UX, and global reach.",
+        "detailTitle": "VividCore AI — Web Platform for an AI Content Company",
+        "detailIntro": "Developed on a paid (freelance) basis, VividCore AI was designed as the digital face of a company that centers AI in visual content production. The project's main focus was to combine a high-performance user experience (UX) with polished animations and global accessibility (multilingual support).",
+        "highlightsTitle": "Key Features",
+        "highlight1": "Speed & Performance: Next.js 14 App Router and server-side rendering (SSR) deliver lightning-fast load times.",
+        "highlight2": "Dynamic Interaction: Framer Motion powers smooth transitions and micro-interactions without overwhelming the user.",
+        "highlight3": "Global Readiness: next-intl integration provides full TR/EN language support and automatic language detection based on user preference.",
+        "highlight4": "Secure Contact: Resend API and Server Actions power a professional contact form with rate limiting, XSS protection, and spam filtering.",
+        "developmentTitle": "Development Process",
+        "developmentIntro": "The project started with a short discovery phase around client needs and acceptance criteria; then design and technical decisions were carried into implementation.",
+        "development1": "Requirements and scope: I clarified the company's services, target audience, and multilingual / performance requirements.",
+        "development2": "Architecture and tech choice: I set up a fast, accessible, and interactive stack with Next.js 14 App Router (SSR/SEO), next-intl (i18n), and Framer Motion.",
+        "development3": "Implementation and delivery: Component-based development, form integration with Resend, rate limiting and security checks were completed; the site was launched with short revision cycles.",
+        "technicalTitle": "Software and Architecture Details",
+        "technical1": "With Next.js 14 App Router, pages are server-side rendered for fast first load and SEO. Layouts and route groups were used for a DRY, maintainable page structure.",
+        "technical2": "next-intl centralizes language files (TR/EN); locale routing and default language from browser preference are handled. All copy is loaded via translation keys.",
+        "technical3": "The contact form is wired to Resend API via a Server Action. Per-request rate limiting, input sanitization, and XSS protection were added; the user sees success and error feedback.",
+        "technical4": "Framer Motion drives page transitions and component enter/exit animations; layoutId and variants keep motion consistent. Animations respect reduced-motion preferences where applicable.",
+        "imageHome1": "Hero Section: Main landing area with headline, short description, and CTA buttons (What We Create, Contact Us).",
+        "imageHome2": "Statistics and About: Follower counts (Total Followers, YouTube, TikTok, Instagram) and the \"Who Is Vividcore_AI?\" intro section.",
+        "imageHome3": "Services (What We Create): Service cards for Brand Campaigns, Social Media Content, Music & Sound-Driven Videos, and Custom & Personal Requests.",
+        "imageStats": "Our Stats page: Summary cards (Total Views, Monthly Reach, Avg Engagement Rate) and platform breakdown (YouTube, TikTok, Instagram).",
+        "imageIletisim": "Contact page: Form with name, email, subject, and message fields, plus contact details and social links."
       },
       "nestjs-ecommerce-backend": {
         "title": "NestJS E-Commerce Backend API",
@@ -140,7 +188,7 @@
   },
   "footer": {
     "copyright": "© {{year}} Yusuf Tetik. All rights reserved.",
-    "madeBy": "Made by Yusuf Tetik"
+    "madeBy": "Designed & developed by Yusuf Tetik"
   },
   "menu": "Menu"
 }

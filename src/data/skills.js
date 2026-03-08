@@ -5,7 +5,7 @@ export const skills = [
   },
   {
     category: 'Frameworks & Tools',
-    items: ['.NET', 'React', 'Next.js', 'Node.js', 'Express.js', 'TailwindCSS', 'Git', 'GitHub', 'Docker', 'Vercel', 'Vite'],
+    items: ['.NET', 'React', 'Next.js', 'Node.js', 'Express.js', 'NestJS', 'FastAPI', 'TypeORM', 'TailwindCSS', 'Framer Motion', 'Swagger', 'JWT', 'Resend', 'Git', 'GitHub', 'Docker', 'Vercel', 'Vite'],
   },
   {
     category: 'Databases',

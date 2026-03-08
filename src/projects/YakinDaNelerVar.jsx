@@ -37,11 +37,16 @@ function YakinDaNelerVar() {
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.yakindanelervar.section1')}
             </p>
-            <img
-              src={images.register}
-              alt="Registration screen"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.register}
+                alt={t('projects.items.yakindanelervar.imageRegister')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.yakindanelervar.imageRegister')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
@@ -49,16 +54,26 @@ function YakinDaNelerVar() {
               {t('projects.items.yakindanelervar.section2')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.adminEmpty}
-                alt="Admin panel empty list"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.dashboard}
-                alt="Admin dashboard"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.adminEmpty}
+                  alt={t('projects.items.yakindanelervar.imageAdminEmpty')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yakindanelervar.imageAdminEmpty')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.dashboard}
+                  alt={t('projects.items.yakindanelervar.imageDashboard')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yakindanelervar.imageDashboard')}
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -67,16 +82,26 @@ function YakinDaNelerVar() {
               {t('projects.items.yakindanelervar.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.home}
-                alt="User homepage and cards"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.calendar}
-                alt="Calendar view"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.home}
+                  alt={t('projects.items.yakindanelervar.imageHome')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yakindanelervar.imageHome')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.calendar}
+                  alt={t('projects.items.yakindanelervar.imageCalendar')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yakindanelervar.imageCalendar')}
+                </figcaption>
+              </figure>
             </div>
           </section>
         </article>

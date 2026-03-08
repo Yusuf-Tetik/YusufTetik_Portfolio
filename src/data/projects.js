@@ -1,5 +1,14 @@
 export const projects = [
   {
+    id: 5,
+    projectTitle: 'VividCore AI',
+    slug: 'vividcore-ai',
+    shortDescription: 'VividCore AI, yapay zeka içerik üretim stüdyosu için tasarlanmış; Next.js 14, Framer Motion ve çok dilli (i18n) altyapıyla geliştirilmiş yüksek performanslı bir kurumsal web platformudur.',
+    techStack: ['Next.js 14', 'TypeScript', 'Framer Motion', 'Tailwind CSS', 'Resend'],
+    githubUrl: 'https://github.com/Yusuf-Tetik',
+    isCommercial: true,
+  },
+  {
     id: 1,
     projectTitle: 'Yakında Neler Var?',
     slug: 'yakindanelervar',
@@ -36,7 +45,7 @@ export const projects = [
     githubUrl: 'https://github.com/Yusuf-Tetik/YapayZekaAkademi',
   },
   {
-    id: 5,
+    id: 6,
     projectTitle: 'NestJS E-Commerce Backend API',
     slug: 'nestjs-ecommerce-backend',
     shortDescription: 'Modern e-ticaret ihtiyaçları için geliştirilmiş, yüksek performanslı ve ölçeklenebilir bir RESTful API çözümü. NestJS mimarisi üzerine kurulu sistem; ürün yönetimi, dinamik sepet işlemleri ve güvenli sipariş akışlarını Dockerize edilmiş bir altyapı üzerinden sunar. JWT tabanlı kimlik doğrulama ve Swagger dökümantasyonu ile tam profesyonel bir backend deneyimi sağlar.',

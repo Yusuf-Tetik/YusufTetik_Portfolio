@@ -37,11 +37,16 @@ function Yobex() {
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.yobex.section1')}
             </p>
-            <img
-              src={images.home}
-              alt="Yobex homepage"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.home}
+                alt={t('projects.items.yobex.imageHome')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.yobex.imageHome')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
@@ -49,16 +54,26 @@ function Yobex() {
               {t('projects.items.yobex.section2')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.detail}
-                alt="Yobex product detail"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.discount}
-                alt="Yobex campaign page"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.detail}
+                  alt={t('projects.items.yobex.imageDetail')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yobex.imageDetail')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.discount}
+                  alt={t('projects.items.yobex.imageDiscount')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yobex.imageDiscount')}
+                </figcaption>
+              </figure>
             </div>
           </section>
 
@@ -67,16 +82,26 @@ function Yobex() {
               {t('projects.items.yobex.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.login}
-                alt="Yobex login screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.signup}
-                alt="Yobex signup screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.login}
+                  alt={t('projects.items.yobex.imageLogin')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yobex.imageLogin')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.signup}
+                  alt={t('projects.items.yobex.imageSignup')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.yobex.imageSignup')}
+                </figcaption>
+              </figure>
             </div>
           </section>
         </article>

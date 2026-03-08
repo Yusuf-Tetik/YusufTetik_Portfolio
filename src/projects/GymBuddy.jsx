@@ -36,22 +36,32 @@ function GymBuddy() {
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.gymbuddy.section1')}
             </p>
-            <img
-              src={images.search}
-              alt="GymBuddy search screen"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.search}
+                alt={t('projects.items.gymbuddy.imageSearch')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.gymbuddy.imageSearch')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
             <p className="text-gray-700 dark:text-gray-300">
               {t('projects.items.gymbuddy.section2')}
             </p>
-            <img
-              src={images.detail}
-              alt="GymBuddy exercise detail screen"
-              className="w-full rounded-xl shadow-lg object-cover"
-            />
+            <figure className="space-y-2">
+              <img
+                src={images.detail}
+                alt={t('projects.items.gymbuddy.imageDetail')}
+                className="w-full rounded-xl shadow-lg object-cover"
+              />
+              <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                {t('projects.items.gymbuddy.imageDetail')}
+              </figcaption>
+            </figure>
           </section>
 
           <section className="space-y-4">
@@ -59,16 +69,26 @@ function GymBuddy() {
               {t('projects.items.gymbuddy.section3')}
             </p>
             <div className="grid md:grid-cols-2 gap-4">
-              <img
-                src={images.auth}
-                alt="GymBuddy login screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
-              <img
-                src={images.result}
-                alt="GymBuddy search results screen"
-                className="w-full rounded-xl shadow-lg object-cover"
-              />
+              <figure className="space-y-2">
+                <img
+                  src={images.auth}
+                  alt={t('projects.items.gymbuddy.imageAuth')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.gymbuddy.imageAuth')}
+                </figcaption>
+              </figure>
+              <figure className="space-y-2">
+                <img
+                  src={images.result}
+                  alt={t('projects.items.gymbuddy.imageResult')}
+                  className="w-full rounded-xl shadow-lg object-cover"
+                />
+                <figcaption className="text-sm text-gray-500 dark:text-gray-400 italic">
+                  {t('projects.items.gymbuddy.imageResult')}
+                </figcaption>
+              </figure>
             </div>
           </section>
         </article>
